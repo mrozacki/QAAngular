@@ -1,0 +1,16 @@
+<div class='row question' >
+  <div class='col-xs-6'>
+    <p class='questiontext'>
+      {{info.text}}
+    </p>
+  </div>
+  <div class='col-xs-2'>
+    <p class='Votes'>
+      {{info.votes}}
+    </p>
+  </div><div class='col-xs-2'>
+    <button class="btn btn-default btn-vote" ng-click="vote(questions.indexOf(info))" >Vote</button>
+  </div><div class='col-xs-2'>
+    <button class="btn btn-default btn-answered" ng-click="answered(questions.indexOf(info))">Answered</button>
+  </div>
+</div>
